@@ -7,7 +7,8 @@ chmod 600 ~/.ssh/gitlab_ed25519 ~/.ssh/github_ed25519 ~/.ssh/bitbucket_rsa
 source $HOME/.keychain/$HOSTNAME-sh
 
 # Add custom prompt
-PS1='\[\e[34m\]../\W\[\e[0m\]\$ '
+PS1='\[\e[34m\]../\W$(__git_ps1 " (%s)")\[\e[0m\]\$ '
+
 
 # Update PATH
 if [ -f $HOME/.path_update ]; then
