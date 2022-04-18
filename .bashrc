@@ -1,9 +1,10 @@
 # Get SSH keys from Windows
-cp -r /mnt/c/Users/'Lester Huang'/.ssh ~/.ssh
-chmod 600 ~/.ssh/gitlab_ed25519 ~/.ssh/github_ed25519 ~/.ssh/bitbucket_rsa
-/usr/bin/keychain --quiet $HOME/.ssh/github_ed25519
-/usr/bin/keychain --quiet $HOME/.ssh/gitlab_ed25519
-/usr/bin/keychain --quiet $HOME/.ssh/bitbucket_rsa
+cp -r /mnt/c/Users/'Lester Huang'/.ssh ~
+chmod 600 ~/.ssh/*
+keychain --quiet
+keychain --quiet $HOME/.ssh/github_ed25519
+keychain --quiet $HOME/.ssh/gitlab_ed25519
+keychain --quiet $HOME/.ssh/bitbucket_rsa
 source $HOME/.keychain/$HOSTNAME-sh
 
 # Add custom prompt
