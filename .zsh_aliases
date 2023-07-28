@@ -1,0 +1,20 @@
+# Shorthand
+alias explorer="explorer.exe"
+alias reload="source ~/.zshrc"
+
+# Navigation
+alias home="cd '$HOME'"
+alias sysC="cd /mnt/c"
+alias sysS="cd /mnt/s"
+
+# Better Tools
+alias vi="nvim"
+alias vim="nvim"
+alias py="ptpython"
+alias python="python3"
+#alias bat="batcat"
+alias ls="exa"
+alias cat="bat --plain --paging=never"
+alias apt="nala"
+
+unalias rm
